@@ -6,7 +6,7 @@
 #       extension: .py
 #       format_name: light
 #       format_version: '1.5'
-#       jupytext_version: 1.4.1
+#       jupytext_version: 1.6.0
 #   kernelspec:
 #     display_name: Python 3
 #     language: python
@@ -108,7 +108,7 @@ warnings.filterwarnings('ignore')
 # Tracks Available:
 
 # +
-# !ls tracks/
+# !dir tracks
 
 tu = TrackIO()
 # -
@@ -140,9 +140,9 @@ pu.plot_trackpoints(track)
 
 # +
 # AWS DeepRacer Console
-stream_name = 'sim-sample' ## CHANGE This to your simulation application ID
-fname = 'logs/deepracer-%s.log' %stream_name  # The log will be downloaded into the specified path
-cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downloaded the file before but want to repeat
+# stream_name = 'C1-FORCE-PIKACHU-v2' ## CHANGE This to your simulation application ID
+# fname = 'logs/deepracer-%s.log' %stream_name  # The log will be downloaded into the specified path
+# cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downloaded the file before but want to repeat
 
 
 # DeepRacer for Dummies / ARCC repository - comment the above and uncomment
@@ -156,7 +156,7 @@ cw.download_log(fname, stream_prefix=stream_name)  # add force=True if you downl
 
 # Chris Rhodes' repository
 # Use a preferred way of saving the logs to a file , then set an fname value to load it
-# fname = /path/to/your/log/file
+fname = '/Users/roger.lamb/workspace/aws-deepracer-workshops/log-analysis/intermediate_checkpoint/C1-FORCE-PIKACHU-v2/logs/training/training-20201006143032-xePcsLCQRLWji6S4kBCZ7g-robomaker.log'
 # -
 
 # ## Load the trace training log
